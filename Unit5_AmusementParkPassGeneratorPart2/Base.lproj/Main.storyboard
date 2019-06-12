@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Unit5_AmusementParkPassGeneratorPart2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCX-mW-Vk8">
+                                <rect key="frame" x="0.0" y="34" width="834" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2as-Ve-lUe">
+                                        <rect key="frame" x="20" y="18" width="183.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="NmG-Ct-7nl"/>
+                                            <constraint firstAttribute="height" constant="38" id="Ubh-If-BaM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="Guest">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ2-hr-rwj">
+                                        <rect key="frame" x="427" y="18" width="183.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="hOg-NN-Fjj"/>
+                                            <constraint firstAttribute="height" constant="38" id="kcS-KM-CNH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="Manager">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efl-5p-15z">
+                                        <rect key="frame" x="640.5" y="17" width="183.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="KBA-Sn-luc"/>
+                                            <constraint firstAttribute="height" constant="38" id="eZX-bx-s0n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="Vendor">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB0-Af-G0b">
+                                        <rect key="frame" x="223.5" y="17" width="183.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="YAH-V6-mXi"/>
+                                            <constraint firstAttribute="height" constant="38" id="zbi-9E-SrT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="Employee">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.54117647058823526" green="0.42745098039215684" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2as-Ve-lUe" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="top" constant="18" id="5t1-9g-TZ3"/>
+                                    <constraint firstAttribute="width" constant="834" id="Jid-1e-BVo"/>
+                                    <constraint firstItem="CZ2-hr-rwj" firstAttribute="leading" secondItem="EB0-Af-G0b" secondAttribute="trailing" constant="20" id="KOs-Zg-dVN"/>
+                                    <constraint firstItem="EB0-Af-G0b" firstAttribute="leading" secondItem="2as-Ve-lUe" secondAttribute="trailing" constant="20" id="R8s-FY-0eg"/>
+                                    <constraint firstItem="efl-5p-15z" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="top" constant="17" id="fJh-8c-kET"/>
+                                    <constraint firstAttribute="trailing" secondItem="efl-5p-15z" secondAttribute="trailing" constant="10" id="pBT-vx-I1F"/>
+                                    <constraint firstItem="efl-5p-15z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CZ2-hr-rwj" secondAttribute="trailing" constant="8" symbolic="YES" id="pdb-hy-aqN"/>
+                                    <constraint firstItem="EB0-Af-G0b" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="top" constant="17" id="uCn-cm-ggr"/>
+                                    <constraint firstAttribute="height" constant="75" id="vZg-7w-bTa"/>
+                                    <constraint firstItem="2as-Ve-lUe" firstAttribute="leading" secondItem="jCX-mW-Vk8" secondAttribute="leading" constant="20" id="wWU-US-KJg"/>
+                                    <constraint firstItem="CZ2-hr-rwj" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="top" constant="18" id="xdk-2c-R4K"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kse-15-PTd">
+                                <rect key="frame" x="0.0" y="109" width="834" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4R-zr-X2J">
+                                        <rect key="frame" x="20" y="23" width="195.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="ATP-XN-OU5"/>
+                                            <constraint firstAttribute="height" constant="38" id="JEv-pk-wD5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="Child">
+                                            <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JG-sn-FbC">
+                                        <rect key="frame" x="223.5" y="23" width="183.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="ZmL-0o-XCJ"/>
+                                            <constraint firstAttribute="height" constant="38" id="wVJ-8v-7pY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="Adult">
+                                            <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqW-CL-BGW">
+                                        <rect key="frame" x="427" y="23" width="183.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="20e-xt-poJ"/>
+                                            <constraint firstAttribute="height" constant="38" id="CRg-pd-6sN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="Senior">
+                                            <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI6-1e-QSf">
+                                        <rect key="frame" x="640.5" y="23" width="183.5" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183.5" id="0pC-da-snb"/>
+                                            <constraint firstAttribute="height" constant="38" id="3Px-ao-vwX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                        <state key="normal" title="VIP">
+                                            <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24705882352941178" green="0.21176470588235294" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="834" id="1KY-Od-yvD"/>
+                                    <constraint firstItem="ZqW-CL-BGW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kse-15-PTd" secondAttribute="leading" constant="20" symbolic="YES" id="2wc-WS-u7a"/>
+                                    <constraint firstItem="6JG-sn-FbC" firstAttribute="leading" secondItem="kse-15-PTd" secondAttribute="leading" constant="223.5" id="5xu-od-9Zt"/>
+                                    <constraint firstItem="UI6-1e-QSf" firstAttribute="leading" secondItem="ZqW-CL-BGW" secondAttribute="trailing" constant="30" id="6pd-Sj-Ojj"/>
+                                    <constraint firstItem="6JG-sn-FbC" firstAttribute="leading" secondItem="Q4R-zr-X2J" secondAttribute="trailing" constant="8" symbolic="YES" id="LAu-g9-YPh"/>
+                                    <constraint firstItem="UI6-1e-QSf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kse-15-PTd" secondAttribute="leading" constant="20" symbolic="YES" id="U7m-7X-7vy"/>
+                                    <constraint firstItem="ZqW-CL-BGW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6JG-sn-FbC" secondAttribute="trailing" constant="8" symbolic="YES" id="cgZ-4r-2qe"/>
+                                    <constraint firstAttribute="trailing" secondItem="UI6-1e-QSf" secondAttribute="trailing" constant="10" id="dVL-W0-Dq5"/>
+                                    <constraint firstAttribute="height" constant="75" id="jmp-BQ-kIL"/>
+                                    <constraint firstItem="Q4R-zr-X2J" firstAttribute="leading" secondItem="kse-15-PTd" secondAttribute="leading" constant="20" id="uki-fm-rlO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oi-Qp-azz">
+                                <rect key="frame" x="20" y="207" width="377" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="377" id="J9s-Jk-ZEW"/>
+                                    <constraint firstAttribute="height" constant="26" id="kL4-Kg-trD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BS0-Kc-22w">
+                                <rect key="frame" x="417" y="207" width="377" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="377" id="9dq-0h-sKT"/>
+                                    <constraint firstAttribute="height" constant="26" id="c6K-eO-NIk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85882352941176465" green="0.83921568627450982" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jCX-mW-Vk8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="0ID-op-c11"/>
+                            <constraint firstItem="BS0-Kc-22w" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="bottom" constant="98" id="3rZ-zo-7vl"/>
+                            <constraint firstItem="BS0-Kc-22w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4oi-Qp-azz" secondAttribute="trailing" constant="8" symbolic="YES" id="9EI-iT-vhN"/>
+                            <constraint firstItem="UI6-1e-QSf" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="bottom" constant="23" id="Brx-vX-s2z"/>
+                            <constraint firstItem="4oi-Qp-azz" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="bottom" constant="98" id="JyG-f0-huw"/>
+                            <constraint firstItem="jCX-mW-Vk8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NMK-hU-4pY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BS0-Kc-22w" secondAttribute="trailing" constant="40" id="Xgb-Tn-meZ"/>
+                            <constraint firstItem="kse-15-PTd" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="bottom" id="aKN-3c-FbE"/>
+                            <constraint firstItem="jCX-mW-Vk8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fOz-gH-7y0"/>
+                            <constraint firstItem="ZqW-CL-BGW" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="bottom" constant="23" id="goD-lr-cKn"/>
+                            <constraint firstItem="kse-15-PTd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hIN-a8-0H9"/>
+                            <constraint firstItem="4oi-Qp-azz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jtw-Yn-Qcr"/>
+                            <constraint firstItem="Q4R-zr-X2J" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="bottom" constant="23" id="lDx-Qg-8Al"/>
+                            <constraint firstItem="kse-15-PTd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oqn-hx-1KM"/>
+                            <constraint firstItem="6JG-sn-FbC" firstAttribute="top" secondItem="jCX-mW-Vk8" secondAttribute="bottom" constant="23" id="vbl-uL-uiV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83.453237410071949" y="53.768844221105525"/>
+        </scene>
+    </scenes>
+</document>
