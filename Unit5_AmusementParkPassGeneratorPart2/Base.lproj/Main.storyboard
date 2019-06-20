@@ -437,15 +437,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="employeeButton" destination="EB0-Af-G0b" id="Gi5-PH-8jZ"/>
+                        <outlet property="guestButton" destination="2as-Ve-lUe" id="Vty-zv-zyl"/>
+                        <outlet property="managerButton" destination="CZ2-hr-rwj" id="uSV-mI-Prg"/>
+                        <outlet property="vendorButton" destination="efl-5p-15z" id="2F5-Yg-IAu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-83.453237410071949" y="53.768844221105525"/>
         </scene>
-        <!--View Controller-->
+        <!--Pass Generator View Controller-->
         <scene sceneID="gXP-Ya-XKR">
             <objects>
-                <viewController id="GUV-Zx-PQK" sceneMemberID="viewController">
+                <viewController id="GUV-Zx-PQK" customClass="PassGeneratorViewController" customModule="Unit5_AmusementParkPassGeneratorPart2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ji-Rk-jsz">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -482,7 +488,7 @@
                                             <constraint firstAttribute="height" constant="271" id="wNQ-Kn-U4G"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvE-kT-GSq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvE-kT-GSq">
                                         <rect key="frame" x="321" y="40" width="465" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="465" id="iGn-Du-7rt"/>
@@ -524,86 +530,116 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poy-1l-9Y2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poy-1l-9Y2">
                                 <rect key="frame" x="20" y="650" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="arb-Uf-One"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="o2M-n7-gjI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Area Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plY-NU-qYk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plY-NU-qYk">
                                 <rect key="frame" x="291" y="650" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="FHD-Qf-KAa"/>
+                                    <constraint firstAttribute="height" constant="61" id="Fhm-XT-Jkd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Ride Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz0-YA-whf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz0-YA-whf">
                                 <rect key="frame" x="562" y="650" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="GRO-jN-EnI"/>
+                                    <constraint firstAttribute="height" constant="61" id="vaF-fa-Vma"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Discount Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdk-5b-lEG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdk-5b-lEG">
                                 <rect key="frame" x="20" y="719" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="H0D-uC-age"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="VPg-au-ibm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Kitchen Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-mL-jxi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-mL-jxi">
                                 <rect key="frame" x="20" y="788" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="Aao-ay-TxR"/>
+                                    <constraint firstAttribute="height" constant="61" id="ZJj-zr-OGF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Amusement Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bp-3U-V5Z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bp-3U-V5Z">
                                 <rect key="frame" x="291" y="788" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="ZHt-kA-lvi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="anh-8U-g0y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Ride Control Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bM-nG-TBM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bM-nG-TBM">
                                 <rect key="frame" x="291" y="719" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="T3Z-FM-vhT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="rLK-q0-lGB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Maintainance Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDP-fK-bBL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDP-fK-bBL">
                                 <rect key="frame" x="562" y="719" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="Ctu-Ad-i6P"/>
+                                    <constraint firstAttribute="height" constant="61" id="TdW-b8-De0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="19"/>
                                 <state key="normal" title="Office Access">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHn-pP-v7n">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHn-pP-v7n">
                                 <rect key="frame" x="20" y="857" width="794" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="HGl-df-Ln3"/>
+                                    <constraint firstAttribute="width" constant="794" id="jBP-Qx-CKx"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b3-di-9Vj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b3-di-9Vj">
                                 <rect key="frame" x="224" y="1064" width="387" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="387" id="8ny-3H-25C"/>
+                                    <constraint firstAttribute="height" constant="90" id="NDh-vs-9rc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <state key="normal" title="Create New Pass">
                                     <color key="titleColor" red="0.34509803919999998" green="0.58431372550000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -612,18 +648,48 @@
                         </subviews>
                         <color key="backgroundColor" red="0.85882352941176465" green="0.83921568627450982" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2bM-nG-TBM" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="291" id="0Kc-4o-hv6"/>
                             <constraint firstItem="Kd4-VM-NpZ" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="41" id="0kG-Yw-XSH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qdk-5b-lEG" secondAttribute="trailing" constant="542" id="46z-Jm-Rve"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2bM-nG-TBM" secondAttribute="trailing" constant="271" id="4Bq-PY-EwE"/>
+                            <constraint firstItem="UUB-ma-cfV" firstAttribute="bottom" secondItem="9b3-di-9Vj" secondAttribute="bottom" constant="20" id="7dz-RC-ncC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="poy-1l-9Y2" secondAttribute="trailing" constant="542" id="8GG-N7-9rF"/>
+                            <constraint firstItem="2bM-nG-TBM" firstAttribute="top" secondItem="plY-NU-qYk" secondAttribute="bottom" constant="8" id="AWE-xa-suH"/>
                             <constraint firstItem="UUB-ma-cfV" firstAttribute="trailing" secondItem="coq-ZN-g9g" secondAttribute="trailing" constant="20" id="Brg-zb-c1f"/>
                             <constraint firstItem="Kd4-VM-NpZ" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="597" id="CJ9-r4-J8D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eX0-mL-jxi" secondAttribute="trailing" constant="542" id="D7O-f5-fqO"/>
+                            <constraint firstItem="Qdk-5b-lEG" firstAttribute="top" secondItem="poy-1l-9Y2" secondAttribute="bottom" constant="8" id="EQn-3Q-HHb"/>
+                            <constraint firstItem="QHn-pP-v7n" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="833" id="Goi-9n-axc"/>
+                            <constraint firstItem="9b3-di-9Vj" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="224" id="HQP-Py-qH2"/>
                             <constraint firstItem="coq-ZN-g9g" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="152" id="Hgd-3C-c1F"/>
                             <constraint firstItem="xDc-Xm-7bN" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="558" id="Hnq-5S-wNv"/>
                             <constraint firstItem="UmI-y2-mEw" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" id="JAK-br-zZm"/>
+                            <constraint firstItem="poy-1l-9Y2" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="626" id="OgC-bV-7Hx"/>
                             <constraint firstItem="coq-ZN-g9g" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="20" id="Rv4-43-8rD"/>
+                            <constraint firstItem="QHn-pP-v7n" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="20" id="S4j-OJ-n25"/>
+                            <constraint firstItem="poy-1l-9Y2" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="20" id="YyJ-jI-raY"/>
                             <constraint firstItem="UUB-ma-cfV" firstAttribute="trailing" secondItem="xDc-Xm-7bN" secondAttribute="trailing" constant="298" id="bSZ-5g-0Xp"/>
+                            <constraint firstItem="PDP-fK-bBL" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="562" id="brK-uq-JUC"/>
+                            <constraint firstItem="eX0-mL-jxi" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="20" id="cRk-Bm-AtJ"/>
                             <constraint firstItem="UmI-y2-mEw" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" id="cw8-3C-ezy"/>
+                            <constraint firstItem="8bp-3U-V5Z" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="764" id="dFQ-TD-SZa"/>
+                            <constraint firstItem="wz0-YA-whf" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="562" id="dUU-AQ-H5e"/>
                             <constraint firstItem="xDc-Xm-7bN" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="298" id="dby-Vq-mOi"/>
+                            <constraint firstItem="wz0-YA-whf" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="626" id="eIU-Ve-mhq"/>
+                            <constraint firstItem="plY-NU-qYk" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="626" id="epF-bI-qQK"/>
+                            <constraint firstItem="wz0-YA-whf" firstAttribute="trailing" secondItem="0ji-Rk-jsz" secondAttribute="trailingMargin" id="f6o-yh-Xtr"/>
+                            <constraint firstItem="PDP-fK-bBL" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="695" id="f7X-ui-E26"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="plY-NU-qYk" secondAttribute="trailing" constant="271" id="fDi-X2-S8n"/>
                             <constraint firstItem="UUB-ma-cfV" firstAttribute="trailing" secondItem="Kd4-VM-NpZ" secondAttribute="trailing" constant="41" id="fSK-RQ-Dbc"/>
+                            <constraint firstItem="plY-NU-qYk" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="291" id="fi3-Ux-HUd"/>
+                            <constraint firstItem="UUB-ma-cfV" firstAttribute="trailing" secondItem="QHn-pP-v7n" secondAttribute="trailing" constant="20" id="fzG-ai-8Wn"/>
+                            <constraint firstItem="Qdk-5b-lEG" firstAttribute="leading" secondItem="UUB-ma-cfV" secondAttribute="leading" constant="20" id="iPO-m0-v0c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8bp-3U-V5Z" secondAttribute="trailing" constant="271" id="iZW-cz-hiK"/>
                             <constraint firstItem="UmI-y2-mEw" firstAttribute="trailing" secondItem="UUB-ma-cfV" secondAttribute="trailing" id="lp3-a4-GrE"/>
+                            <constraint firstItem="8bp-3U-V5Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eX0-mL-jxi" secondAttribute="trailing" constant="8" symbolic="YES" id="mkA-h2-d3d"/>
+                            <constraint firstItem="UUB-ma-cfV" firstAttribute="trailing" secondItem="PDP-fK-bBL" secondAttribute="trailing" constant="20" id="t0F-i5-8Wb"/>
+                            <constraint firstItem="eX0-mL-jxi" firstAttribute="top" secondItem="UUB-ma-cfV" secondAttribute="top" constant="764" id="vWD-GN-RBT"/>
+                            <constraint firstItem="UUB-ma-cfV" firstAttribute="trailing" secondItem="9b3-di-9Vj" secondAttribute="trailing" constant="223" id="zov-IS-7c5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UUB-ma-cfV"/>
                     </view>

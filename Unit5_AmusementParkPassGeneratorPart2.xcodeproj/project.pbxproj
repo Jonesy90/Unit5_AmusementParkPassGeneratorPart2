@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2B16C0522B51DDB00F875FD /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0422B51DDB00F875FD /* Guest.swift */; };
 		B2B16C0722B51EBF00F875FD /* AreaAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0622B51EBF00F875FD /* AreaAccess.swift */; };
+		B2B16C0922B54F9E00F875FD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0822B54F9E00F875FD /* Person.swift */; };
+		B2B16C0B22B553DF00F875FD /* InputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0A22B553DF00F875FD /* InputError.swift */; };
+		B2B16C0D22B5573600F875FD /* Discounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0C22B5573600F875FD /* Discounts.swift */; };
+		B2B16C0F22B8292900F875FD /* PassGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0E22B8292900F875FD /* PassGeneratorViewController.swift */; };
 		B2CC876722B1816300619B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CC876622B1816300619B16 /* AppDelegate.swift */; };
 		B2CC876922B1816300619B16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CC876822B1816300619B16 /* ViewController.swift */; };
 		B2CC876C22B1816300619B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CC876A22B1816300619B16 /* Main.storyboard */; };
@@ -37,8 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B2B16C0422B51DDB00F875FD /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
 		B2B16C0622B51EBF00F875FD /* AreaAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAccess.swift; sourceTree = "<group>"; };
+		B2B16C0822B54F9E00F875FD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B2B16C0A22B553DF00F875FD /* InputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputError.swift; sourceTree = "<group>"; };
+		B2B16C0C22B5573600F875FD /* Discounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discounts.swift; sourceTree = "<group>"; };
+		B2B16C0E22B8292900F875FD /* PassGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGeneratorViewController.swift; sourceTree = "<group>"; };
 		B2CC876322B1816300619B16 /* Unit5_AmusementParkPassGeneratorPart2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unit5_AmusementParkPassGeneratorPart2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CC876622B1816300619B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2CC876822B1816300619B16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,9 +111,12 @@
 			children = (
 				B2CC876622B1816300619B16 /* AppDelegate.swift */,
 				B2CC876822B1816300619B16 /* ViewController.swift */,
+				B2B16C0E22B8292900F875FD /* PassGeneratorViewController.swift */,
 				B2CC876A22B1816300619B16 /* Main.storyboard */,
-				B2B16C0422B51DDB00F875FD /* Guest.swift */,
+				B2B16C0822B54F9E00F875FD /* Person.swift */,
 				B2B16C0622B51EBF00F875FD /* AreaAccess.swift */,
+				B2B16C0A22B553DF00F875FD /* InputError.swift */,
+				B2B16C0C22B5573600F875FD /* Discounts.swift */,
 				B2CC877022B1816400619B16 /* Assets.xcassets */,
 				B2CC877222B1816400619B16 /* LaunchScreen.storyboard */,
 				B2CC877522B1816400619B16 /* Info.plist */,
@@ -265,10 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B16C0922B54F9E00F875FD /* Person.swift in Sources */,
+				B2B16C0D22B5573600F875FD /* Discounts.swift in Sources */,
+				B2B16C0B22B553DF00F875FD /* InputError.swift in Sources */,
+				B2B16C0F22B8292900F875FD /* PassGeneratorViewController.swift in Sources */,
 				B2B16C0722B51EBF00F875FD /* AreaAccess.swift in Sources */,
 				B2CC876922B1816300619B16 /* ViewController.swift in Sources */,
 				B2CC876722B1816300619B16 /* AppDelegate.swift in Sources */,
-				B2B16C0522B51DDB00F875FD /* Guest.swift in Sources */,
 				B2CC876F22B1816300619B16 /* Unit5_AmusementParkPassGeneratorPart2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
