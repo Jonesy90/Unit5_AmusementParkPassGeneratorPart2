@@ -438,6 +438,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="dateOfBirthTextField" destination="mv2-tF-kfN" id="ZdA-Ob-4ex"/>
                         <outlet property="employeeButton" destination="EB0-Af-G0b" id="Gi5-PH-8jZ"/>
                         <outlet property="guestButton" destination="2as-Ve-lUe" id="Vty-zv-zyl"/>
                         <outlet property="managerButton" destination="CZ2-hr-rwj" id="uSV-mI-Prg"/>
