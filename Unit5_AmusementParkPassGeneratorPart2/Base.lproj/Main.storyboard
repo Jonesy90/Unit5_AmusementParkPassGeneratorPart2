@@ -457,7 +457,7 @@
                         <outlet property="socialSecurityNumberTextField" destination="LZh-cX-Zpj" id="txU-tV-jz4"/>
                         <outlet property="stateTextField" destination="mDZ-0e-Zgd" id="ZdI-6J-KHT"/>
                         <outlet property="streetAddressTextField" destination="n6h-dM-M9S" id="xah-2P-THx"/>
-                        <outlet property="vendorButton" destination="efl-5p-15z" id="2F5-Yg-IAu"/>
+                        <outlet property="vendorButton" destination="efl-5p-15z" id="s0r-om-MQR"/>
                         <outlet property="zipCodeTextField" destination="dAj-bE-HqX" id="7z0-GO-nmV"/>
                         <segue destination="GUV-Zx-PQK" kind="presentation" identifier="generatePassSegue" id="LjK-iw-YWR"/>
                     </connections>
@@ -515,17 +515,40 @@
                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPG-FI-VjD">
+                                        <rect key="frame" x="321" y="79" width="465" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LO-Ep-NrP">
+                                        <rect key="frame" x="321" y="79" width="465" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="465" id="lMd-cG-lig"/>
+                                            <constraint firstAttribute="height" constant="31" id="xR3-uo-U9p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="bvE-kT-GSq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="coq-ZN-g9g" secondAttribute="leading" constant="20" symbolic="YES" id="3cv-W4-AEJ"/>
+                                    <constraint firstItem="6LO-Ep-NrP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="coq-ZN-g9g" secondAttribute="leading" constant="20" symbolic="YES" id="BqL-dM-dn7"/>
                                     <constraint firstAttribute="width" constant="794" id="J51-iE-Fbg"/>
                                     <constraint firstItem="bvE-kT-GSq" firstAttribute="top" secondItem="coq-ZN-g9g" secondAttribute="top" constant="40" id="SbI-sl-cbq"/>
+                                    <constraint firstItem="VPG-FI-VjD" firstAttribute="leading" secondItem="6LO-Ep-NrP" secondAttribute="leading" id="Tqo-Gh-kmx"/>
                                     <constraint firstAttribute="bottom" secondItem="liI-rv-GBJ" secondAttribute="bottom" constant="45" id="Vt4-Md-t7g"/>
+                                    <constraint firstItem="VPG-FI-VjD" firstAttribute="trailing" secondItem="6LO-Ep-NrP" secondAttribute="trailing" id="Yji-TI-djv"/>
+                                    <constraint firstItem="6LO-Ep-NrP" firstAttribute="top" secondItem="bvE-kT-GSq" secondAttribute="bottom" constant="8" id="Yt1-Wf-PcB"/>
                                     <constraint firstAttribute="height" constant="356" id="ZLg-IQ-pvP"/>
                                     <constraint firstItem="liI-rv-GBJ" firstAttribute="top" secondItem="coq-ZN-g9g" secondAttribute="top" constant="40" id="bQv-Qr-7D4"/>
+                                    <constraint firstItem="VPG-FI-VjD" firstAttribute="baseline" secondItem="6LO-Ep-NrP" secondAttribute="baseline" id="bpT-F1-xJN"/>
                                     <constraint firstItem="liI-rv-GBJ" firstAttribute="leading" secondItem="coq-ZN-g9g" secondAttribute="leading" constant="28" id="db3-rf-ilj"/>
                                     <constraint firstAttribute="trailing" secondItem="bvE-kT-GSq" secondAttribute="trailing" constant="8" id="lrh-EQ-TTD"/>
+                                    <constraint firstItem="VPG-FI-VjD" firstAttribute="firstBaseline" secondItem="6LO-Ep-NrP" secondAttribute="firstBaseline" id="u9o-jf-8Lj"/>
+                                    <constraint firstAttribute="trailing" secondItem="6LO-Ep-NrP" secondAttribute="trailing" constant="8" id="xy9-Kz-bAH"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDc-Xm-7bN">
@@ -713,12 +736,13 @@
                     </view>
                     <connections>
                         <outlet property="fullNameLabel" destination="bvE-kT-GSq" id="S72-EW-lg9"/>
+                        <outlet property="personalTypeLabel" destination="6LO-Ep-NrP" id="4k0-7e-h3t"/>
                         <outlet property="photoImage" destination="liI-rv-GBJ" id="D7F-le-05y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOc-Gl-Pb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647" y="54"/>
+            <point key="canvasLocation" x="646.76258992805765" y="53.768844221105525"/>
         </scene>
     </scenes>
 </document>

@@ -10,9 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    var firstNameText: String?
-    var lastNameText: String?
+    var socialSecurityNumberString: String?
+    var projectNumberString: String?
     
     //UITextFields & DatePicker
     @IBOutlet weak var dateOfBirthTextField: UITextField!
@@ -28,8 +27,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var stateTextField: UITextField!
     @IBOutlet weak var zipCodeTextField: UITextField!
     
-    
-    
     //UIButtons
     @IBOutlet weak var guestButton: UIButton!
     @IBOutlet weak var employeeButton: UIButton!
@@ -42,9 +39,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonFour: UIButton!
     
     
+    var socialSecurityNumber: String?
+    var projectString: String?
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,44 +56,57 @@ class ViewController: UIViewController {
         
         dateOfBirthTextField.inputView = datePicker
         
-        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     //MARK: - Segue Methods
     
     @IBAction func generatePassButtonPressed(_ sender: Any) {
-        firstNameText = firstNameTextField.text!
-        lastNameText = lastNameTextField.text!
-        
-        
         performSegue(withIdentifier: "generatePassSegue", sender: self)
         
     }
     
+    
+    
+    
+    
+    
+    
+        //HELPER METHODS
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passGeneraterViewController = segue.destination as!  PassGeneratorViewController
-        passGeneraterViewController.firstName = self.firstNameText!
-        passGeneraterViewController.lastName = self.lastNameText!
+        
+        passGeneraterViewController.firstNameString = firstNameTextField.text!
+        passGeneraterViewController.lastNameString = lastNameTextField.text!
+        passGeneraterViewController.dateOfBirthString = dateOfBirthTextField.text!
+        
+        passGeneraterViewController.companyNameString = companyNameTextField.text!
+        passGeneraterViewController.cityString = cityTextField.text!
+        passGeneraterViewController.stateString = stateTextField.text!
+        passGeneraterViewController.zipCodeString = zipCodeTextField.text!
+        
+        passGeneraterViewController.socialSecurityNumberString = socialSecurityNumberTextField.text!
+        passGeneraterViewController.projectNumberString = projectNumberTextField.text!
+        
+        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //HELPER METHODS
     
     //will remove the datepicker once the user has finished.
     @objc func viewTapped(gestureRecongnizer: UITapGestureRecognizer) {
