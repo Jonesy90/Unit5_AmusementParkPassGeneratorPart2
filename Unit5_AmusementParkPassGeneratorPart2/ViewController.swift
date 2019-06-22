@@ -59,10 +59,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func selectEntrantType(_ sender: UIButton) {
-        //Should return an error if nothing is selected?
-        guard let title = sender.currentTitle else { return }
-        
-        
         
     }
     
