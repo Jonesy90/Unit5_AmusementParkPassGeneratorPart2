@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var socialSecurityNumberString: String?
-    var projectNumberString: String?
-    
     //UITextFields & DatePicker
     @IBOutlet weak var dateOfBirthTextField: UITextField!
     private var datePicker: UIDatePicker?
@@ -39,8 +36,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonFour: UIButton!
     
     
-    var socialSecurityNumber: String?
-    var projectString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,14 +48,11 @@ class ViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.viewTapped(gestureRecongnizer:)))
         
         view.addGestureRecognizer(tapGesture)
-        
         dateOfBirthTextField.inputView = datePicker
-        
+     
+
     }
     
-    @IBAction func selectEntrantType(_ sender: UIButton) {
-        
-    }
     
     
     
@@ -72,19 +64,9 @@ class ViewController: UIViewController {
     
     //Mark: - Prepare for Segue Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let passGeneraterViewController = segue.destination as!  PassGeneratorViewController
+        _ = segue.destination as!  PassGeneratorViewController
         
-        passGeneraterViewController.firstNameString = firstNameTextField.text!
-        passGeneraterViewController.lastNameString = lastNameTextField.text!
-        passGeneraterViewController.dateOfBirthString = dateOfBirthTextField.text!
         
-        passGeneraterViewController.companyNameString = companyNameTextField.text!
-        passGeneraterViewController.cityString = cityTextField.text!
-        passGeneraterViewController.stateString = stateTextField.text!
-        passGeneraterViewController.zipCodeString = zipCodeTextField.text!
-        
-        passGeneraterViewController.socialSecurityNumberString = socialSecurityNumberTextField.text!
-        passGeneraterViewController.projectNumberString = projectNumberTextField.text!
 
     }
     

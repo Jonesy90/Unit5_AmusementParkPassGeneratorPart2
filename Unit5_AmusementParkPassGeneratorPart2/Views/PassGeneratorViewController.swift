@@ -10,19 +10,6 @@ import UIKit
 
 class PassGeneratorViewController: UIViewController {
     
-    //
-    var firstNameString: String? = ""
-    var lastNameString: String? = ""
-    var dateOfBirthString: String? = ""
-    
-    var companyNameString: String? = ""
-    var cityString: String? = ""
-    var stateString: String? = ""
-    var zipCodeString: String? = ""
-
-    var socialSecurityNumberString: String? = ""
-    var projectNumberString: String? = ""
-    
     //UILabel
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var personalTypeLabel: UILabel!
@@ -33,8 +20,6 @@ class PassGeneratorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        fullNameLabel.text = firstNameString! + " " + lastNameString!
         
         
         //Assigning the image to the UIImageView.

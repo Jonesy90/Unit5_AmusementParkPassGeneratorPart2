@@ -8,16 +8,6 @@
 
 import Foundation
 
-protocol PersonalInfo {
-    var firstName: String? { get }
-    var lastName: String? { get }
-    var companyName: String? { get }
-    var streetAddress: String? { get }
-    var city: String? { get }
-    var state: String? { get }
-    var zipCode: String? { get }
-}
-
 enum PersonalType {
     case classicGuest
     case vipGuest
@@ -34,7 +24,7 @@ enum PersonalType {
     case vendor
 }
 
-class Person: PersonalInfo {
+class Person {
     let personalType: PersonalType
     var firstName: String?
     var lastName: String?
