@@ -58,38 +58,23 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //MARK: - Segue Methods
-    
-    @IBAction func generatePassButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "generatePassSegue", sender: self)
+    @IBAction func selectEntrantType(_ sender: UIButton) {
+        //Should return an error if nothing is selected?
+        guard let title = sender.currentTitle else { return }
+        
+        
         
     }
     
     
     
+    @IBAction func generatePassButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "generatePassSegue", sender: self)
+    }
     
+
     
-    
-    
-        //HELPER METHODS
-    
+    //Mark: - Prepare for Segue Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passGeneraterViewController = segue.destination as!  PassGeneratorViewController
         
@@ -104,8 +89,7 @@ class ViewController: UIViewController {
         
         passGeneraterViewController.socialSecurityNumberString = socialSecurityNumberTextField.text!
         passGeneraterViewController.projectNumberString = projectNumberTextField.text!
-        
-        
+
     }
     
     //will remove the datepicker once the user has finished.
