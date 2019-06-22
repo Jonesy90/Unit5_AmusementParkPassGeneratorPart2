@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2650BF722BE27C500F3AF34 /* FaceImageAsset.png in Resources */ = {isa = PBXBuildFile; fileRef = B2650BF622BE27C500F3AF34 /* FaceImageAsset.png */; };
 		B2B16C0722B51EBF00F875FD /* AreaAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0622B51EBF00F875FD /* AreaAccess.swift */; };
 		B2B16C0922B54F9E00F875FD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0822B54F9E00F875FD /* Person.swift */; };
 		B2B16C0B22B553DF00F875FD /* InputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B16C0A22B553DF00F875FD /* InputError.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2650BF622BE27C500F3AF34 /* FaceImageAsset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceImageAsset.png; sourceTree = "<group>"; };
 		B2B16C0622B51EBF00F875FD /* AreaAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAccess.swift; sourceTree = "<group>"; };
 		B2B16C0822B54F9E00F875FD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B2B16C0A22B553DF00F875FD /* InputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputError.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				B2B16C0A22B553DF00F875FD /* InputError.swift */,
 				B2B16C0C22B5573600F875FD /* Discounts.swift */,
 				B2CC877022B1816400619B16 /* Assets.xcassets */,
+				B2650BF622BE27C500F3AF34 /* FaceImageAsset.png */,
 				B2CC877222B1816400619B16 /* LaunchScreen.storyboard */,
 				B2CC877522B1816400619B16 /* Info.plist */,
 				B2CC876D22B1816300619B16 /* Unit5_AmusementParkPassGeneratorPart2.xcdatamodeld */,
@@ -250,6 +253,7 @@
 				B2CC877422B1816400619B16 /* LaunchScreen.storyboard in Resources */,
 				B2CC877122B1816400619B16 /* Assets.xcassets in Resources */,
 				B2CC876C22B1816300619B16 /* Main.storyboard in Resources */,
+				B2650BF722BE27C500F3AF34 /* FaceImageAsset.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

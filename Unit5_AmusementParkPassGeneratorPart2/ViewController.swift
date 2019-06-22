@@ -10,9 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    var firstNameText: String?
+    var lastNameText: String?
+    
     //UITextFields & DatePicker
     @IBOutlet weak var dateOfBirthTextField: UITextField!
     private var datePicker: UIDatePicker?
+    
+    @IBOutlet weak var socialSecurityNumberTextField: UITextField!
+    @IBOutlet weak var projectNumberTextField: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var companyNameTextField: UITextField!
+    @IBOutlet weak var streetAddressTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var zipCodeTextField: UITextField!
     
     
     
@@ -48,6 +62,42 @@ class ViewController: UIViewController {
         
     }
     
+    //MARK: - Segue Methods
+    
+    @IBAction func generatePassButtonPressed(_ sender: Any) {
+        firstNameText = firstNameTextField.text!
+        lastNameText = lastNameTextField.text!
+        
+        
+        performSegue(withIdentifier: "generatePassSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let passGeneraterViewController = segue.destination as!  PassGeneratorViewController
+        passGeneraterViewController.firstName = self.firstNameText!
+        passGeneraterViewController.lastName = self.lastNameText!
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //HELPER METHODS
+    
     //will remove the datepicker once the user has finished.
     @objc func viewTapped(gestureRecongnizer: UITapGestureRecognizer) {
         view.endEditing(true)
@@ -59,16 +109,6 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "dd/MM/yyyy"
         dateOfBirthTextField.text = dateFormatter.string(from: datePicker.date)
     }
-
-    
-    
-    
-    
-    
-    
-
-    
-    
 
 
 }

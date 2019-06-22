@@ -233,7 +233,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-uX-UNC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-uX-UNC">
                                 <rect key="frame" x="20" y="910" width="251.5" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="251.5" id="Xmq-4E-075"/>
@@ -243,7 +243,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJh-m4-YfJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJh-m4-YfJ">
                                 <rect key="frame" x="291.5" y="910" width="251.5" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="251.5" id="MbM-Z3-ZQg"/>
@@ -253,7 +253,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whs-uG-rR0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whs-uG-rR0">
                                 <rect key="frame" x="562.5" y="910" width="251.5" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="3Ek-IE-zFh"/>
@@ -294,6 +294,9 @@
                                 <state key="normal" title="Generate Pass">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="generatePassButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCj-Gw-YrT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDa-ae-HYz">
                                 <rect key="frame" x="427" y="1091" width="387" height="50"/>
@@ -438,11 +441,25 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonFour" destination="UI6-1e-QSf" id="Fny-oC-SEq"/>
+                        <outlet property="buttonOne" destination="Q4R-zr-X2J" id="urX-nZ-MS1"/>
+                        <outlet property="buttonThree" destination="ZqW-CL-BGW" id="90k-eL-fhc"/>
+                        <outlet property="buttonTwo" destination="6JG-sn-FbC" id="7sb-vP-Ewy"/>
+                        <outlet property="cityTextField" destination="ayt-Pi-cXH" id="0qd-uh-Sl0"/>
+                        <outlet property="companyNameTextField" destination="Qe4-Mk-8PL" id="1gs-SG-Kfi"/>
                         <outlet property="dateOfBirthTextField" destination="mv2-tF-kfN" id="ZdA-Ob-4ex"/>
                         <outlet property="employeeButton" destination="EB0-Af-G0b" id="Gi5-PH-8jZ"/>
+                        <outlet property="firstNameTextField" destination="MP5-SK-vp7" id="O7H-wZ-awF"/>
                         <outlet property="guestButton" destination="2as-Ve-lUe" id="Vty-zv-zyl"/>
+                        <outlet property="lastNameTextField" destination="sjV-P8-X9n" id="mXX-MB-eXP"/>
                         <outlet property="managerButton" destination="CZ2-hr-rwj" id="uSV-mI-Prg"/>
+                        <outlet property="projectNumberTextField" destination="0SC-ID-sY6" id="fqr-bm-oXC"/>
+                        <outlet property="socialSecurityNumberTextField" destination="LZh-cX-Zpj" id="txU-tV-jz4"/>
+                        <outlet property="stateTextField" destination="mDZ-0e-Zgd" id="ZdI-6J-KHT"/>
+                        <outlet property="streetAddressTextField" destination="n6h-dM-M9S" id="xah-2P-THx"/>
                         <outlet property="vendorButton" destination="efl-5p-15z" id="2F5-Yg-IAu"/>
+                        <outlet property="zipCodeTextField" destination="dAj-bE-HqX" id="7z0-GO-nmV"/>
+                        <segue destination="GUV-Zx-PQK" kind="presentation" identifier="generatePassSegue" id="LjK-iw-YWR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -694,10 +711,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UUB-ma-cfV"/>
                     </view>
+                    <connections>
+                        <outlet property="fullNameLabel" destination="bvE-kT-GSq" id="S72-EW-lg9"/>
+                        <outlet property="photoImage" destination="liI-rv-GBJ" id="D7F-le-05y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOc-Gl-Pb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588.48920863309354" y="57.788944723618094"/>
+            <point key="canvasLocation" x="647" y="54"/>
         </scene>
     </scenes>
 </document>

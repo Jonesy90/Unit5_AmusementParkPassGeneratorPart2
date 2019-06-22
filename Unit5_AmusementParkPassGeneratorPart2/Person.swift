@@ -53,11 +53,11 @@ class Person: PersonalInfo {
         self.personalType = personalType
         
         guard let firstName = firstName else {
-            throw InputError.firstNameMissingError
+            throw InputError.firstNameMissingError(description: "First name is missing")
         }
         
         guard let lastName = lastName else {
-            throw InputError.lastNameMissingError
+            throw InputError.lastNameMissingError(description: "Last name is missing")
         }
         
         var foodDiscount: Int {

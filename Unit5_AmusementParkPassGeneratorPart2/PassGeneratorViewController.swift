@@ -9,11 +9,34 @@
 import UIKit
 
 class PassGeneratorViewController: UIViewController {
+    
+    //
+    var dateOfBirth = ""
+    var socialSecurityNumber = ""
+    var projectNumber = ""
+    var firstName = ""
+    var lastName = ""
+    var companyName = ""
+    var city = ""
+    var state = ""
+    var zipCode = ""
+    
+    //UILabel
+    @IBOutlet weak var fullNameLabel: UILabel!
+    
+    //UIImageView
+    @IBOutlet weak var photoImage: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fullNameLabel.text = firstName + " " + lastName
+        
+        
+        //Assigning the image to the UIImageView.
+        self.photoImage.image = UIImage(named: "FaceImageAsset.png")
 
-        // Do any additional setup after loading the view.
     }
     
 

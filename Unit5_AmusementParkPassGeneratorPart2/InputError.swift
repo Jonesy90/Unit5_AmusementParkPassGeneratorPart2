@@ -9,12 +9,12 @@
 import Foundation
 
 enum InputError: Error {
-    case firstNameMissingError
-    case lastNameMissingError
-    case companyNameMissingError
-    case streetAddressMissingError
-    case cityMissingError
-    case stateMissingError
-    case zipCodeMissingError
+    case firstNameMissingError(description: String)
+    case lastNameMissingError(description: String)
+    case companyNameMissingError(description: String)
+    case streetAddressMissingError(description: String)
+    case cityMissingError(description: String)
+    case stateMissingError(description: String)
+    case zipCodeMissingError(description: String)
 }
 
