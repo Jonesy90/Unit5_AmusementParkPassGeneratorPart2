@@ -17,8 +17,8 @@ enum Area {
 }
 
 protocol  AreaAcces {
-    var amusementAreas: Bool { get set}
-    var kitchenAreas: Bool { get set}
+    var amusementAreas: Bool { get }
+    var kitchenAreas: Bool { get }
     var rideControlAreas: Bool { get }
     var maintainanceAreas: Bool { get }
     var officeAreas: Bool { get }
