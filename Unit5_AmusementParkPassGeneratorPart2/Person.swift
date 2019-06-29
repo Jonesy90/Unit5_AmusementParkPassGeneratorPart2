@@ -24,75 +24,82 @@ enum PersonalType {
     case vendor
 }
 
-class Person {
-    let personalType: PersonalType
-    var firstName: String?
-    var lastName: String?
-    var dateOfBirth: String?
-    var companyName: String?
-    var streetAddress: String?
-    var city: String?
-    var state: String?
-    var zipCode: String?
-    
-    var foodDiscountValue: Int
-    var merchandiseDicountValue: Int
-    
-    init?(personalType: PersonalType, firstName: String?, lastName: String?, dateOfBirth: String?, companyName: String?, streetAddress: String?, city: String?, state: String?, zipCode: String?) throws {
-        
-        self.personalType = personalType
-        
-        guard let firstName = firstName else {
-            throw InputError.firstNameMissingError(description: "First name is missing")
-        }
-        
-        guard let lastName = lastName else {
-            throw InputError.lastNameMissingError(description: "Last name is missing")
-        }
-        
-        var foodDiscount: Int {
-            switch personalType {
-            case .vipGuest : return Discounts.vipGuestFoodDiscount.discountAmount
-            case .maintenanceEmployee : return Discounts.maintanceServiceFoodDiscount.discountAmount
-            case .rideServiceEmployee : return Discounts.rideServiceFoodDiscount.discountAmount
-            case .managerEmployee : return Discounts.managerFoodDiscount.discountAmount
-            case .classicGuest : return 0
-            case .freeChildGuest : return 0
-            case .seasonPassGuest : return Discounts.seasonPassGuestFoodDiscount.discountAmount
-            case .seniorGuest : return Discounts.seasonPassGuestFoodDiscount.discountAmount
-            case .contractEmployee : return 0
-            case .vendor : return 0
-            case .foodServiceEmployee : return 0
-            }
-        }
-        
-        var merchandiseDiscount: Int {
-            switch personalType {
-            case .vipGuest : return Discounts.vipGuestMerchandiseDiscount.discountAmount
-            case .maintenanceEmployee : return Discounts.maintanceServiceMerchandiseDiscount.discountAmount
-            case .rideServiceEmployee : return Discounts.rideServiceMerchandiseDiscount.discountAmount
-            case .managerEmployee : return Discounts.managerMerchandiseDiscount.discountAmount
-            case .classicGuest : return 0
-            case .freeChildGuest : return 0
-            case .seasonPassGuest : return Discounts.seasonPassGuestMerchandiseDiscount.discountAmount
-            case .seniorGuest : return Discounts.seniorGuestMerchandiseDiscount.discountAmount
-            case .contractEmployee : return 0
-            case .vendor : return 0
-            case .foodServiceEmployee : return 0
-            }
-        }
-        
-        self.firstName = firstName
-        self.lastName = lastName
-        self.dateOfBirth = dateOfBirth
-        self.companyName = companyName
-        self.streetAddress = streetAddress
-        self.city = city
-        self.state = state
-        self.zipCode = zipCode
-        
-        self.foodDiscountValue = foodDiscount
-        self.merchandiseDicountValue = merchandiseDiscount
-    }
+//Guests
+class Guest: AreaAcces {
+    var amusementAreas: Bool = true
+    var kitchenAreas: Bool = false
+    var rideControlAreas: Bool = false
+    var maintainanceAreas: Bool = false
+    var officeAreas: Bool = false
+}
+
+class FreeChildGuest: Guest {
     
 }
+
+class SeasonPassGuest: Guest {
+    
+}
+
+class SeniorGuest: Guest {
+    
+}
+
+
+
+
+
+
+//Employees
+class Employee: AreaAcces {
+    var firstNameString: String
+    var lastNameString: String
+    var streetAddressString: String
+    var cityString: String
+    var stateString: String
+    var zipCodeString: String
+    var socialSecurityNumberString: String
+    var dateOfBirthString: String
+    
+    var amusementAreas: Bool = true
+    var kitchenAreas: Bool = false
+    var rideControlAreas: Bool = false
+    var maintainanceAreas: Bool = false
+    var officeAreas: Bool = false
+    
+    init(firstName: String, lastName: String, streetAddress: String, city: String, state: String, zipCode: String, socialSecurityNumber: String, dateOfBirth: String) {
+        firstNameString = firstName
+        lastNameString = lastName
+        streetAddressString = streetAddress
+        cityString = city
+        stateString = state
+        zipCodeString = zipCode
+        socialSecurityNumberString = socialSecurityNumber
+        dateOfBirthString = dateOfBirth
+    }
+    
+    
+}
+
+class FoodServiceEmployee: Employee {
+
+}
+
+class RideServiceEmployee: Employee {
+    
+}
+
+class MaintenanceEmployee: Employee {
+    
+}
+
+class ManagerEmployee: Employee {
+    
+}
+
+class ContractEmployee: Employee {
+    
+}
+
+//Vendors
+
