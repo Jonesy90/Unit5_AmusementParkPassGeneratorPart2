@@ -35,10 +35,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonThree: UIButton!
     @IBOutlet weak var buttonFour: UIButton!
     
+    //button values : BOOL
+    
+    var guestButtonPressed: Bool = false
+    var employeeButtonPressed: Bool = false
+    var managerButtonPressed: Bool = false
+    var vendorButtonPressed: Bool = false
+    
+    var buttonOnePressed: Bool = false
+    var buttonTwoPressed: Bool = false
+    var buttonThreePressed: Bool = false
+    var buttonFourPressed: Bool = false
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         //When the user presses on the 'dateOfBirthTextField'. A DatePicker will appear.
         datePicker = UIDatePicker()
@@ -83,5 +96,48 @@ class ViewController: UIViewController {
     }
 
 
+    
+    //Updating the label names of the buttons.
+    @IBAction func guestButtonPressed(_ sender: Any) {
+        guestButtonPressed = true
+        
+
+    }
+    
+    @IBAction func employeeButtonPressed(_ sender: Any) {
+        employeeButtonPressed = true
+        
+        buttonOne.titleLabel!.text = "Food"
+        buttonTwo.titleLabel!.text = "Ride"
+        buttonThree.titleLabel!.text = "Maintaince"
+        buttonFour.titleLabel!.text = "Hourly"
+    }
+    
+    @IBAction func managerButtonPressed(_ sender: Any) {
+        managerButtonPressed = true
+        
+        buttonOne.titleLabel!.text = ""
+        buttonTwo.titleLabel!.text = ""
+        buttonThree.titleLabel!.text = ""
+        buttonFour.titleLabel!.text = ""
+    }
+    
+    @IBAction func vendorButtonPressed(_ sender: Any) {
+        vendorButtonPressed = true
+        
+        buttonOne.titleLabel!.text = ""
+        buttonTwo.titleLabel!.text = ""
+        buttonThree.titleLabel!.text = ""
+        buttonFour.titleLabel!.text = ""
+    }
+    
+    
+    
+    
+    
 }
+
+
+
+
 

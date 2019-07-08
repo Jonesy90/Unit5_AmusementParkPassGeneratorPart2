@@ -31,6 +31,9 @@
                                         <state key="normal" title="Guest">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="guestButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kaz-aa-Pgu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ2-hr-rwj">
                                         <rect key="frame" x="427" y="18" width="183.5" height="38"/>
@@ -42,6 +45,9 @@
                                         <state key="normal" title="Manager">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="managerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ua0-b0-lQv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efl-5p-15z">
                                         <rect key="frame" x="640.5" y="17" width="183.5" height="38"/>
@@ -53,6 +59,9 @@
                                         <state key="normal" title="Vendor">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="vendorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQ3-ag-RNL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB0-Af-G0b">
                                         <rect key="frame" x="223.5" y="17" width="183.5" height="38"/>
@@ -64,6 +73,9 @@
                                         <state key="normal" title="Employee">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="employeeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bh9-C4-Z1C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.54117647058823526" green="0.42745098039215684" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
